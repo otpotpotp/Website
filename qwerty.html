@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/my.css" />
+    <title>Galleryzak</title>
+  </head>
+  <body>
+    <header>
+      <div class="d-menu">
+      <div class="logo">
+        <img src="img/Logo.jpg" alt="Gallery logo" width="60px" />
+        <h2>Galleryzak</h2>
+      </div>
+      <nav>
+		  <ul>
+			  <li><a href="qwerty.html">Home</a></li>
+			  <li><a href="Contacts.html">Contacts</a></li>
+			  <li><a href="About us.html">About us</a></li>
+		  </ul>
+      </nav>
+    </div>
+
+      <div class="menu">
+        <a class="menu-trigger" onclick="showme()"> <img src="1.jpg" alt="Open"></a>
+        <div class="menu-popup"> 
+          <a class="menu-close" onclick="hideme()"><img src="closer.png" alt="Close"></a>
+          <ul>
+            <li><a href="qwerty.html">Home</a></li>
+            <li><a href="Contacts.html">Contacts</a></li>
+            <li><a href="About us.html">About us</a></li>
+          </ul>
+        </div>
+      </div>
+    
+
+    </header>
+
+
+<script type="text/javascript">
+
+function hideme(){
+
+// document.getElementsByClassName('menu-trigger')[0].style.display="none";
+document.getElementsByClassName('menu-close')[0].style.display="none";
+document.getElementsByClassName('menu-popup')[0].style.display="none";
+document.getElementsByClassName('menu-trigger')[0].style.display="block";
+}
+
+function showme(){  
+
+  document.getElementsByClassName('menu-popup')[0].style.display="block";
+  document.getElementsByClassName('menu-trigger ')[0].style.display="none";
+  document.getElementsByClassName('menu-close')[0].style.display="block";
+  // document.getElementsByClassName('menu-popup')[0].style.display="none";
+}
+</script>
+
+
+    <main >
+      
+      <div class="section-one">
+        <div>
+        <img src="main-photo.jpg" alt="Main photo" />
+      </div>
+        <p class="text">
+          Today we have a leading collections of modern and contemporary art
+          comprising woks by international artists which reflects the energy,
+          commitment and diversity of emerging artists.
+        </p>
+      </div>
+
+      <div class="section-two">
+        <div>
+          <button class="first-button" onclick="document.location='Tickets.html'">Buy tickets</button>
+        </div>
+        <div>
+          
+         
+
+          <button class="second-button"onclick="document.location='Contact-form.html'" >Contact us</button>
+        </div>
+      </div>
+
+      <div class="intro-video"> 
+          <video class="video" src="video.mp4" autoplay muted loop></video>
+      </div>
+   
+    </main>
+
+    <footer>
+       	 <div>
+			<div class="footer-text">420 Gallery Street, Lviv, 34078</div>
+			<div class="footer-text">gallerylife@gmail.com</div>
+			<div class="footer-text">+38 (098) 123-45-67 </div>
+		</div>
+        <div class="footer-photos">
+			<a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="facebook link" ></a>
+		<a href="https://web.telegram.org/" target="_blank"><img src="img/telegram.png" alt="telerram link"></a>
+		<a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="instagram link"></a>
+		</div>
+    </footer>
+  </body>
+</html>

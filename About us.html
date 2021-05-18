@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/my.css">
+    <title>About us</title>
+</head>
+<body>
+    <header>
+        <div class="d-menu">
+            <div class="logo">
+              <img src="img/Logo.jpg" alt="Gallery logo" width="60px" />
+              <h2>Galleryzak</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="qwerty.html">Home</a></li>
+                    <li><a href="Contacts.html">Contacts</a></li>
+                    <li><a href="About us.html">About us</a></li>
+                </ul>
+            </nav>
+          </div>
+      
+            <div class="menu">
+              <a class="menu-trigger" onclick="showme()"> <img src="1.jpg" alt="Open"></a>
+              <div class="menu-popup"> 
+                <a class="menu-close" onclick="hideme()"><img src="closer.png" alt="Close"></a>
+                <ul>
+                  <li><a href="qwerty.html">Home</a></li>
+                  <li><a href="Contacts.html">Contacts</a></li>
+                  <li><a href="About us.html">About us</a></li>
+                </ul>
+              </div>
+            </div>
+          
+      
+      </header>
+      
+      <script type="text/javascript">
+        function hideme(){
+        
+        // document.getElementsByClassName('menu-trigger')[0].style.display="none";
+        document.getElementsByClassName('menu-close')[0].style.display="none";
+        document.getElementsByClassName('menu-popup')[0].style.display="none";
+        document.getElementsByClassName('menu-trigger')[0].style.display="block";
+        }
+        
+        function showme(){  
+        
+          document.getElementsByClassName('menu-popup')[0].style.display="block";
+          document.getElementsByClassName('menu-trigger ')[0].style.display="none";
+          document.getElementsByClassName('menu-close')[0].style.display="block";
+          // document.getElementsByClassName('menu-popup')[0].style.display="none";
+        }
+        </script>
+        
+      
+      <main>
+        <div class="staff">
+            <div> 
+                <div class="Gallery_Staff">Gallery Staff</div>
+                <div>
+                    <img src="img/Kristen.jpg" width="200PX" alt="Kristen">
+                </div>
+            
+               <p><strong>Kristen Evangelista, Director</strong> </p>
+               <p class="krist-em">evangelistak@wpunj.edu  </p>    
+            <p>
+                Kristen Evangelista has been Director of the William Paterson University Galleries since 2011. She has a BA in Art History and Women’s Studies from Wesleyan University, and an MA in Curatorial Studies from Bard College. She previously worked at the San Jose Museum of Art, Southern Exposure, and the San Jose Institute of Contemporary Art. She has also authored essays for exhibition publications and was a contributing writer for Art Ltd., a West Coast magazine focused on art and design.
+            </p>
+            </div>
+
+            <div>
+                <div class="emily-img"><img src="img/Emily.jpg" width="200PX" alt="Emily"></div>     
+                <p><strong> Emily Johnsen, Gallery Manager</strong>  </p>
+                <p class="emily-em">johnsene@wpunj.edu </p> 
+                <p>Gallery Manager Emily Johnsen has worked as an arts administrator for over a decade. She received a B. A. in the History of Art and Architecture from Miami University (Oxford, Ohio), and an M.A. in Visual Arts Administration from New York University. During her graduate studies, she pursued her interest in photography working for Pace/MacGill Gallery, the Photographs Department of Philips de Pury & Company, and for Aperture Foundation. In 2016, she curated Traces of Time: Photographic Explorations of the Natural World, which featured the work of four photographers who utilize scientific research, conduct experimental studies, or embark on expeditions to capture the passage of time through changing landscapes, organic life cycles, or celestial activity. Ms. Johnsen also serves on the University's WP Green Team and is a member of the American Alliance of Museum's Environment and Climate Network.</p> 
+            </div>
+            <div>
+             <div class="casey-img"><img src="img/Casey.jpg" width="200PX" alt="Casey"></div>
+                <p><strong> Casey Mathern, Curator of Visual Resources and Collections Manager</strong> </p>
+                <p class="casey-em"> mathernc@wpunj.edu</p>
+                <p class="casey-bio">
+                    Before working with academic collections, Ms. Mathern held curatorial positions at regional historical museums, working with a range of ethnographic, archaeological, fine and decorative arts collections. She holds an MA degree in decorative arts, design history, and material culture from the Bard Graduate Center in New York City, and a BA degree in art history from the University of Minnesota. Professionally, she has served on program committees for the AASLH Annual Meeting and the Minnesota Association of Museums (MAM), and was a steering committee member for North Star Connect, MAM's emerging museum professional group, where she helped establish a mentoring program. She has published about her work in AAM’s CurComm Update, and has presented at numerous academic and professional conferences.
+                </p>  
+            </div>
+        </div>          
+        </main>
+
+      <footer>
+        <div>
+        <div class="footer-text">420 Gallery Street, Lviv, 34078</div>
+        <div class="footer-text">gallerylife@gmail.com</div>
+        <div class="footer-text">+38 (011)-912-81-22 </div>
+    </div>
+    <div class="footer-photos">
+        <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="facebook link" ></a>
+        <a href="https://web.telegram.org/" target="_blank"><img src="img/telegram.png" alt="telerram link"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="instagram link"></a>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/my.css" />
+    <title>Galleryzak</title>
+  </head>
+  <body>
+    <header>
+      <div class="d-menu">
+      <div class="logo">
+        <img src="img/Logo.jpg" alt="Gallery logo" width="60px" />
+        <h2>Galleryzak</h2>
+      </div>
+      <nav>
+		  <ul>
+			  <li><a href="qwerty.html">Home</a></li>
+			  <li><a href="Contacts.html">Contacts</a></li>
+			  <li><a href="About us.html">About us</a></li>
+		  </ul>
+      </nav>
+    </div>
+
+      <div class="menu">
+        <a class="menu-trigger" onclick="showme()"> <img src="1.jpg" alt="Open"></a>
+        <div class="menu-popup"> 
+          <a class="menu-close" onclick="hideme()"><img src="closer.png" alt="Close"></a>
+          <ul>
+            <li><a href="qwerty.html">Home</a></li>
+            <li><a href="Contacts.html">Contacts</a></li>
+            <li><a href="About us.html">About us</a></li>
+          </ul>
+        </div>
+      </div>
+    
+
+    </header>
+
+    <main > 
+    <div class="contact-us-main"   >
+     
+    
+        <form action=" " >
+          <h1 class="group">Contact us</h1>
+          <div class="group">
+            <label for="name"></label><input name="name"  type="text"  autocomplete="off" placeholder="Name" maxlength="40" >
+          </div>
+          <div class="group">
+            <label for="Email"></label> <input name="Email"  type="email" a autocomplete="  off" placeholder="Email" maxlength="70">
+          </div>
+          <div class="group">
+            <label for="Subject"></label> <input name="Subject"  type="text"  autocomplete="off" placeholder="Subject" maxlength="150" >
+          </div>
+          <div class="group">
+            <label for="textarea"></label><textarea name="textarea"  id="" cols="30" rows="10"  autocomplete="off" placeholder="Message"></textarea>
+          </div>
+          <div class="group1">
+            <label for="submit"></label><button name="submit"  type="submit"   >Submit</button>
+          </div>
+          
+      
+         
+         
+    
+        
+        </form>
+        
+    </div>
+    </main>
+
+
+    <script type="text/javascript">
+      
+   
+
+      function hideme(){
+      
+      // document.getElementsByClassName('menu-trigger')[0].style.display="none";
+      document.getElementsByClassName('menu-close')[0].style.display="none";
+      document.getElementsByClassName('menu-popup')[0].style.display="none";
+      document.getElementsByClassName('menu-trigger')[0].style.display="block";
+      }
+      
+      function showme(){  
+      
+        document.getElementsByClassName('menu-popup')[0].style.display="block";
+        document.getElementsByClassName('menu-trigger ')[0].style.display="none";
+        document.getElementsByClassName('menu-close')[0].style.display="block";
+        // document.getElementsByClassName('menu-popup')[0].style.display="none";
+      }
+      </script>
+       <footer class="contact-us-footer">
+        <div>
+    <div class="footer-text">420 Gallery Street, Lviv, 34078</div>
+    <div class="footer-text">gallerylife@gmail.com</div>
+    <div class="footer-text">+38 (098) 123-45-67 </div>
+  </div>
+      <div class="footer-photos">
+    <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="facebook link" ></a>
+  <a href="https://web.telegram.org/" target="_blank"><img src="img/telegram.png" alt="telerram link"></a>
+  <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="instagram link"></a>
+  </div>
+  </footer>
+</body>
+</html>

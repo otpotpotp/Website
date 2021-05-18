@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/my.css" />
+    <title>Galleryzak</title>
+  </head>
+  <body>
+
+    <header>
+        <div class="d-menu">
+        <div class="logo">
+          <img src="img/Logo.jpg" alt="Gallery logo" width="60px" />
+          <h2>Galleryzak</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="qwerty.html">Home</a></li>
+                <li><a href="Contacts.html">Contacts</a></li>
+                <li><a href="About us.html">About us</a></li>
+            </ul>
+        </nav>
+      </div>
+  
+        <div class="menu">
+          <a class="menu-trigger" onclick="showme()"> <img src="1.jpg" alt="Open"></a>
+          <div class="menu-popup"> 
+            <a class="menu-close" onclick="hideme()"><img src="closer.png" alt="Close"></a>
+            <ul>
+              <li><a href="qwerty.html">Home</a></li>
+              <li><a href="Contacts.html">Contacts</a></li>
+              <li><a href="About us.html">About us</a></li>
+            </ul>
+          </div>
+        </div>
+      
+  
+      </header>
+
+      <main class="ticket-main">
+        <div class="tickets">
+            <div class="basic">
+                <div class="logo1">
+                    <h2>BASIC </h2>
+                    <img src="basic.png" alt="logo-pic">
+                                       
+                </div>
+
+                <div class="block">
+
+                </div>
+
+                <div class="price">
+                    <h3 >9.99$</h3>
+                    <p class="per-user">/year per user</p>
+                </div>
+
+                <div class="list-box">
+                  <span class="list"> Dedicated assistance</span>
+                  <span class="list"> Gallery profile page</span>
+                  <span class="list"> Copy and SEO optimization</span>
+                  <span class="list"> X</span>
+                  <span class="list"> X</span>
+                </div>
+                <a class="link-to-contact-us" href="Contact-form.html">
+                  <div class="subsribe_cart">
+                    <div class="cart">
+                <img src="https://pngimg.com/uploads/shopping_cart/shopping_cart_PNG38.png" alt="cart">
+                    </div>
+                <div class="subscribe">
+                  Subscribe now</div>
+                  </div>
+                </a>
+                  
+            </div>
+
+
+            <div class="advanced">
+                <div class="logo1">
+                    <h2>ADVANCED</h2>
+                    <img src="advanced.png" alt="logo-pic">
+                   
+                </div>
+                <div class="block">
+
+                </div>
+                <div class="price">
+                    <h3>12.99$</h3>
+                    <p class="per-user">/year per user</p>
+                </div>
+                <div class="list-box">
+                  <span class="list"> Dedicated assistance</span>
+                  <span class="list"> Gallery profile page</span>
+                  <span class="list"> Copy and SEO optimization</span>
+                  <span class="list"> Special visibility in the Artdirectory</span>
+                  <span class="list"> X</span>
+                </div>
+                <a class="link-to-contact-us" href="Contact-form.html">
+                  <div class="subsribe_cart">
+                    <div class="cart">
+                <img src="https://pngimg.com/uploads/shopping_cart/shopping_cart_PNG38.png" alt="cart">
+                    </div>
+                <div class="subscribe">
+                  Subscribe now</div>
+                  </div>
+                </a>
+                  
+            </div>
+
+
+            <div class="vip">
+          
+                <div class="logo1">
+                    <h2>VIP</h2>
+                    <img src="vip.png" alt="logo-pic">
+                </div>
+                <div class="block">
+
+                </div>
+                <div class="price">
+                    <h3>18.99$</h3>
+                    <p class="per-user">/year per user</p>
+                </div>
+                <div class="list-box">
+                  <span class="list"> Dedicated assistance</span>
+                  <span class="list"> Gallery profile page</span>
+                  <span class="list"> Copy and SEO optimization</span>
+                  <span class="list"> Special visibility in the Artdirectory</span>
+                  <span class="list"> Special Events</span>
+                </div>
+                <a class="link-to-contact-us" href="Contact-form.html">
+                  <div class="subsribe_cart">
+                   
+                    <div class="cart">
+                <img src="https://pngimg.com/uploads/shopping_cart/shopping_cart_PNG38.png" alt="cart">
+                    </div>
+                <div class="subscribe">
+                  Subscribe now</div>
+                  </div>  
+                </a>
+                  
+            </div>
+        </div>
+    </main>
+
+      <script type="text/javascript">
+      
+   
+
+        function hideme(){
+        
+        // document.getElementsByClassName('menu-trigger')[0].style.display="none";
+        document.getElementsByClassName('menu-close')[0].style.display="none";
+        document.getElementsByClassName('menu-popup')[0].style.display="none";
+        document.getElementsByClassName('menu-trigger')[0].style.display="block";
+        }
+        
+        function showme(){  
+        
+          document.getElementsByClassName('menu-popup')[0].style.display="block";
+          document.getElementsByClassName('menu-trigger ')[0].style.display="none";
+          document.getElementsByClassName('menu-close')[0].style.display="block";
+          // document.getElementsByClassName('menu-popup')[0].style.display="none";
+        }
+        </script>
+         <footer class="Tickets-footer">
+          <div>
+      <div class="footer-text">420 Gallery Street, Lviv, 34078</div>
+      <div class="footer-text">gallerylife@gmail.com</div>
+      <div class="footer-text">+38 (098) 123-45-67 </div>
+    </div>
+        <div class="footer-photos">
+      <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="facebook link" ></a>
+    <a href="https://web.telegram.org/" target="_blank"><img src="img/telegram.png" alt="telerram link"></a>
+    <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="instagram link"></a>
+    </div>
+    
+</body>
+</html>
