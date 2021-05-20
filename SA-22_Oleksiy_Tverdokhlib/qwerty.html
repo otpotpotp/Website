@@ -24,9 +24,9 @@
     </div>
 
       <div class="menu">
-        <a class="menu-trigger" onclick="showme()"> <img src="1.jpg" alt="Open"></a>
+        <a class="menu-trigger" onclick="showme()"> <img src="img/1.jpg" alt="Open"></a>
         <div class="menu-popup"> 
-          <a class="menu-close" onclick="hideme()"><img src="closer.png" alt="Close"></a>
+          <a class="menu-close" onclick="hideme()"><img src="img/closer.png" alt="Close"></a>
           <ul>
             <li><a href="qwerty.html">Home</a></li>
             <li><a href="Contacts.html">Contacts</a></li>
@@ -43,7 +43,6 @@
 
 function hideme(){
 
-// document.getElementsByClassName('menu-trigger')[0].style.display="none";
 document.getElementsByClassName('menu-close')[0].style.display="none";
 document.getElementsByClassName('menu-popup')[0].style.display="none";
 document.getElementsByClassName('menu-trigger')[0].style.display="block";
@@ -54,7 +53,7 @@ function showme(){
   document.getElementsByClassName('menu-popup')[0].style.display="block";
   document.getElementsByClassName('menu-trigger ')[0].style.display="none";
   document.getElementsByClassName('menu-close')[0].style.display="block";
-  // document.getElementsByClassName('menu-popup')[0].style.display="none";
+
 }
 </script>
 
@@ -63,7 +62,7 @@ function showme(){
       
       <div class="section-one">
         <div>
-        <img src="main-photo.jpg" alt="Main photo" />
+        <img src="img/main-photo.jpg" alt="Main photo" />
       </div>
         <p class="text">
           Today we have a leading collections of modern and contemporary art
@@ -84,9 +83,9 @@ function showme(){
         </div>
       </div>
 
-      <div class="intro-video"> 
-          <video class="video" src="video.mp4" autoplay muted loop></video>
-      </div>
+        <div class="intro-video"> 
+            <video class="video" src="video/video.mp4" autoplay muted loop></video>
+        </div>
    
     </main>
 
